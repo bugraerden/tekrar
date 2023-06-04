@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CS BLOGS</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path("create-blog")}}"> Blog Oluştur</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <table class="table">
+                <thead class="thead-light">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Başlık</th>
+                    <th scope="col">İçerik</th>
+                    <th scope="col">Statü</th>
+                    <th scope="col">Yaş Aralığı</th>
+                    <th scope="col">Kategori</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+{% endblock %}
